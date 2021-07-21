@@ -1,0 +1,32 @@
+<!--Faça um script em JavaScript para escrever
+ "Hello World" em um arquivo HTML qualquer-->
+ <!DOCTYPE html>
+ <html>
+ <body>
+ 
+ <h2>Lista</h2>
+ 
+ <div id="lista">
+ 
+ </div>
+ 
+ <button id="adicionar" onclick="funcao()">Adicionar</button>
+ <button id="limpar" onclick="limpar()">Remover</button>
+ 
+ <script>
+ 
+ function limpar() {
+   document.getElementById('lista').innerHTML = ''
+ }
+ 
+ function funcao() {
+     var div = document.createElement('li')
+     div.innerHTML = "Test"
+ 
+   document.getElementById('lista').append(div);
+ }
+ </script>
+ 
+ </body>
+ </html>
+ 
